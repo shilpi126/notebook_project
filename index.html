@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: space-around; margin: 30px;">
+    <div>
+        <form onsubmit="handleFormSubmit(event)">
+            <label for="title">Note Title :</label>
+            <input type="text" id="title" name="title"/><br><br>
+            <label for="des">Note Dese :</label><br>
+            <textarea cols="32" rows="5" id="des"></textarea><br>
+            <button type="submit" >Add To Book</button>
+        </form>
+        <ul id="parentList">
+            <li>
+            <h1>A Journey</h1>
+            <p>This is a title</p>
+            <button>Delete</button>
+            </li>
+          
+        </ul>
+    </div>
+    <div>
+        <h1>NoteBook</h1>
+        <label for="search">Search Notes :</label>
+        <input type="search" id="search" name="saerch" placeholder="search..."/>
+       <div style="text-align: center; margin-top: 10px;"> 
+        <label for="count">Total Notes : </label>
+        <span id="count"></span><br>
+        <label for="show">Showing :</label>
+        <span id="show"> 2</span>
+       </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
